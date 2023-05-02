@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Dunkin';
+  src: local('Dunkin'), url(./fonts/Dunkin.woff) format('woff');
+}
+
+html {
+  font-size: calc(15px + 0.390625vw);
+}
+
+body {
+  background-color: #222222;
+  color: rgb(206, 212, 218);
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}

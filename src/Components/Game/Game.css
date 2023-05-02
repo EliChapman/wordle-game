@@ -1,0 +1,101 @@
+#game-container {
+    width: 100%;
+    margin-top: 5vh;
+}
+
+#board {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5, 10vh);
+    grid-template-rows: repeat(6, 10vh);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    aspect-ratio: 1/1;
+    margin-left: .2vw;
+    margin-right: .2vw;
+    margin-top: .2vh;
+    margin-top: .2vh;
+    border: .1vw #c4c0c0 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.letter {
+    margin: 0;
+}
+
+#keyboard {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    max-width: 30vw;
+    max-height: 20vh;
+}
+
+.simple-keyboard.wordle {
+    background-color: transparent;   
+}
+
+.simple-keyboard.hg-layout-default .hg-button {
+    color: aliceblue;
+    background-color: #818384;
+    border-color: #5a5b5c;
+}
+
+.simple-keyboard.hg-layout-default .hg-button:hover {
+    background-color: #aeb1b3;
+    border-color: #828486;
+}
+
+.box.green {
+    background-color: rgb(90, 180, 113);
+}
+
+.box.yellow {
+    background-color: rgb(180, 174, 90);
+}
+
+.box.gray {
+    background-color: rgb(70, 70, 70);
+}
+
+.simple-keyboard.hg-layout-default .hg-button.gray {
+    background-color: rgb(70, 70, 70);
+    border-color: #2e2e2e;
+}
+
+.simple-keyboard.hg-layout-default .hg-button.gray:hover {
+    background-color: rgb(97, 97, 97);
+    border-color: #3b3b3b;
+}
+
+.simple-keyboard.hg-layout-default .hg-button.yellow {
+    background-color: rgb(180, 174, 90);
+    border-color: rgb(105, 102, 53);;
+}
+
+.simple-keyboard.hg-layout-default .hg-button.yellow:hover {
+    background-color: rgb(211, 204, 105);
+    border-color: rgb(155, 151, 79);;
+}
+
+.simple-keyboard.hg-layout-default .hg-button.green {
+    background-color: rgb(90, 180, 113);
+    border-color: rgb(57, 116, 72);
+}
+
+.simple-keyboard.hg-layout-default .hg-button.green:hover {
+    background-color: rgb(105, 212, 132);
+    border-color: rgb(79, 160, 99);
+}
+
+#time {
+    position: absolute;
+    top: 15%;
+    left: 25%
+}

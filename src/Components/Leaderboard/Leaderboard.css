@@ -1,0 +1,46 @@
+#leaderboard-container {
+    width: 100%;
+    height: fit-content;
+}
+
+#scores {
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    text-align: center;
+}
+
+#sort-button {
+    aspect-ratio: 16/7;
+    background-color: #52b9d6;
+    width: 7vw;
+    padding: .2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px #479ab1 solid;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    text-align: center;
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+#sort-button:hover {
+    cursor: pointer;
+    background-color: #78cee6;
+    border-color: #52b9d6;
+}
