@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+It also uses the following packages:
+
+ * FontAwesone for various icons
+ * React Router for page navigation
+ * React Simple Keyboard for simpler creation of the on-screen keyboard
+
+The program's concept takes significant inspiration from the New York Times game "Wordle", but uses no code from the website itself.
+
 ## Available Scripts
 
 In the project directory, you can run:
