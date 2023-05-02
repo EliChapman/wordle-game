@@ -22,6 +22,7 @@ const Leaderboard = () => {
         var time_list = localStorage.getItem('time').split(" ")
         word_list.pop()
         time_list.pop()
+        time_list = time_list.map(Number);
         var output = []
         var order = [...Array(word_list.length).keys()]
 
@@ -31,7 +32,7 @@ const Leaderboard = () => {
         if (sort === 'time') {
             for(let i = 1; i < time_list.length;i++){
                 for(let j = i - 1; j > -1; j--){
-                    if(time_list[j + 1] > time_list[j]){
+                    if(time_list[j + 1] < time_list[j]){
                         [order[j+1], order[j]] = [order[j], order[j + 1]];
                         [time_list[j+1], time_list[j]] = [time_list[j], time_list[j + 1]];
                     }
